@@ -1,4 +1,4 @@
-sciencecard-cookbook
-====================
+orcid-feed-cookbook
+============
 
-Chef cookbook for sciencecard project
+Chef cookbook for installing orcid-feed
