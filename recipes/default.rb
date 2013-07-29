@@ -24,5 +24,5 @@ end
 web_app "orcid-feed" do
   docroot "/vagrant/public"
   template "orcid-feed.conf.erb"
-  notifies :reload, resources(:service => "apache2"), :delayed
+  notifies :restart, resources(:service => "apache2")
 end
