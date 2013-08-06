@@ -7,13 +7,16 @@
       Options FollowSymLinks
       AllowOverride None
     </Directory>
-	
+
     <Directory /vagrant/public >
       Options Indexes FollowSymLinks MultiViews
       AllowOverride All
       Order allow,deny
       allow from all
     </Directory>
+
+    # Enable CORS
+    Header set Access-Control-Allow-Origin "*"
 
     # Deflate
     AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/xml application/xhtml+xml text/javascript
